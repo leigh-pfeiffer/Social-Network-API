@@ -1,6 +1,29 @@
 {
+  "name": "no-sql-social-network-api",
+  "version": "1.0.0",
+  "description": "NoSql social network api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esroleo/no-sql-social-network-api.git"
+  },
+  "keywords": [
+    "nosql",
+    "api"
+  ],
+  "author": "Esteban Romero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esroleo/no-sql-social-network-api/issues"
+  },
+  "homepage": "https://github.com/esroleo/no-sql-social-network-api#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "i": "^0.3.7"
+    "express": "^4.17.1",
+    "i": "^0.3.7",
+    "mongoose": "^5.12.3"
   }
 }

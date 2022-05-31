@@ -1,8 +1,9 @@
 const express = require('express');
+// moongose to connect when the app starts
 const mongoose = require('mongoose');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3021;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -10,8 +11,10 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-// tells mongoose which database to connect to 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {
+// moongose setup before port listener.
+// deployed to heroku
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
